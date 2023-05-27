@@ -63,13 +63,18 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "name": {
-      "type": "string",
-      "required": true
-    },
     "image": {
       "type": "text",
       "default": "https://res.cloudinary.com/dthpcwn8r/image/upload/v1675781215/user_nnv5jz.png"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "biginteger"
     }
   }
 }
