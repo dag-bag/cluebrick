@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories_with_products",
+  "info": {
+    "singularName": "categories-with-product",
+    "pluralName": "categories-with-products",
+    "displayName": "Categories With Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "href": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "categories_with_product"
+    }
+  }
+}

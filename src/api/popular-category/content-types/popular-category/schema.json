@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popular_categories",
+  "info": {
+    "singularName": "popular-category",
+    "pluralName": "popular-categories",
+    "displayName": "Popular category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "href": {
+      "type": "text"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
