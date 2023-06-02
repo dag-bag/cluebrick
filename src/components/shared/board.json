@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_boards",
+  "info": {
+    "displayName": "Board"
+  },
+  "options": {},
+  "attributes": {
+    "href": {
+      "type": "text"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
