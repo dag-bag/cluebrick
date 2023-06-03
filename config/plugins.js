@@ -9,8 +9,8 @@ module.exports = ({ env }) => ({
         apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        defaultFrom: "myemail@protonmail.com",
-        defaultReplyTo: "myemail@protonmail.com",
+        defaultFrom: "virenderkumar23435@gmail.com",
+        defaultReplyTo: "virenderkumar23435@gmail.com",
       },
     },
   },
