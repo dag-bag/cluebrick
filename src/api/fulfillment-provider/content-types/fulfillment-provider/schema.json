@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fulfillment_providers",
+  "info": {
+    "singularName": "fulfillment-provider",
+    "pluralName": "fulfillment-providers",
+    "displayName": "Fulfillment Provider",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "is_installed": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "regions",
+  "collectionName": "images",
   "info": {
-    "singularName": "region",
-    "pluralName": "regions",
-    "displayName": "Region",
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Image",
     "description": ""
   },
   "options": {
@@ -14,16 +14,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "medusa_id": {
+      "type": "uid",
+      "required": true
+    },
+    "url": {
       "type": "string",
       "required": true
-    },
-    "tax_rate": {
-      "type": "decimal",
-      "required": true
-    },
-    "tax_code": {
-      "type": "string"
     },
     "metadata": {
       "type": "json"
