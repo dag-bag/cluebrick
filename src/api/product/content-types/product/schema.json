@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "desc": {
+    "description": {
       "type": "text"
     },
     "category": {
@@ -43,6 +43,48 @@
       "relation": "manyToOne",
       "target": "api::categories-with-product.categories-with-product",
       "inversedBy": "products"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "handle": {
+      "type": "string"
+    },
+    "is_giftcard": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "discountable": {
+      "type": "boolean",
+      "default": true
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "hs_code": {
+      "type": "string"
+    },
+    "origin_country": {
+      "type": "string"
+    },
+    "mid_code": {
+      "type": "string"
+    },
+    "material": {
+      "type": "text"
     }
   }
 }
