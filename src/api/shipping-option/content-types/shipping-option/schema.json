@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shipping_options",
+  "info": {
+    "singularName": "shipping-option",
+    "pluralName": "shipping-options",
+    "displayName": "Shipping Option",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price_type": {
+      "type": "enumeration",
+      "enum": ["flat_rate", "calculated"],
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": false
+    },
+    "is_return": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "admin_only": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "data": {
+      "type": "json"
+    },
+    "metadata": {
+      "type": "json"
+    }
+  }
+}
