@@ -93,6 +93,9 @@
     },
     "about_me": {
       "type": "text"
+    },
+    "address": {
+      "type": "text"
     }
   }
 }
