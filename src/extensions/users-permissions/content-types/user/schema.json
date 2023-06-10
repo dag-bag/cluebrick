@@ -78,6 +78,21 @@
     },
     "is_otp_verified": {
       "type": "boolean"
+    },
+    "country": {
+      "type": "text"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "about_me": {
+      "type": "text"
     }
   }
 }
