@@ -20,6 +20,7 @@
     "@strapi/strapi": "4.11.1",
     "pg": "^8.9.0",
     "railway": "^2.0.17",
+    "request": "^2.88.2",
     "strapi-paypal": "^1.0.4",
     "strapi-plugin-import-export-entries": "^1.18.0",
     "strapi-plugin-multi-select": "^1.1.0",
