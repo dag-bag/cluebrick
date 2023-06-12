@@ -15,7 +15,6 @@
     "@strapi/plugin-i18n": "4.5.5",
     "@strapi/plugin-seo": "^1.8.0",
     "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-email-mailgun": "^4.11.0",
     "@strapi/provider-email-sendgrid": "^4.10.7",
     "@strapi/provider-upload-cloudinary": "4.5.5",
     "@strapi/strapi": "4.5.5",
@@ -24,8 +23,7 @@
     "strapi-paypal": "^1.0.4",
     "strapi-plugin-import-export-entries": "^1.18.0",
     "strapi-plugin-multi-select": "^1.1.0",
-    "strapi-plugin-sitemap": "^2.0.9",
-    "strapi-provider-email-resend": "^1.0.4"
+    "strapi-plugin-sitemap": "^2.0.9"
   },
   "author": {
     "name": "A Strapi developer"

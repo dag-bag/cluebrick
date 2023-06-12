@@ -4,15 +4,13 @@ module.exports = ({ env }) => ({
   // },
   email: {
     config: {
-      provider: "mailgun",
+      provider: "sendgrid",
       providerOptions: {
-        key: env("MAILGUN_API_KEY"), // Required
-        domain: env("MAILGUN_DOMAIN"), // Required
-        url: env("MAILGUN_URL", "https://api.mailgun.net"), //Optional. If domain region is Europe use 'https://api.eu.mailgun.net'
+        apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        defaultFrom: "virenderkumar23435@gmail.com",
-        defaultReplyTo: "virenderkumar23435@gmail.com",
+        defaultFrom: "dinesh2014@gmail.com",
+        defaultReplyTo: "dinesh2014@gmail.com",
       },
     },
   },
