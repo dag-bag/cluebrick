@@ -21,10 +21,8 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "alpaca stuffed animals",
-        "alpaca slippers",
-        "alpaca clothing",
-        "alpaca key chain"
+        "shirts",
+        "pants"
       ]
     },
     "Seo": {
@@ -55,14 +53,15 @@
       "default": false
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "discountable": {
       "type": "boolean",
