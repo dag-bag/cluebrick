@@ -52,9 +52,9 @@
       "type": "boolean",
       "default": false
     },
-    "thumbnail": {
+    "images": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
@@ -84,6 +84,103 @@
     },
     "material": {
       "type": "text"
+    },
+    "popular_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::popular-category.popular-category",
+      "mappedBy": "products"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "sku": {
+      "type": "biginteger"
+    },
+    "sizes": {
+      "type": "customField",
+      "options": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "colors": {
+      "type": "customField",
+      "options": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue",
+        "Indigo",
+        "Violet",
+        "Purple",
+        "Pink"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "tags": {
+      "type": "customField",
+      "options": [
+        "New Arrivals",
+        "Best Sellers",
+        "Sale",
+        "Clearance",
+        "Limited Stock",
+        "Trending",
+        "Featured",
+        "Top Rated",
+        "Exclusive",
+        "Popular",
+        "Free Shipping",
+        "Flash Sale",
+        "Deals",
+        "Discount",
+        "Seasonal",
+        "Holiday",
+        "Gift Ideas",
+        "Special Offers",
+        "Under $20 (or any other price range)",
+        "Organic",
+        "Sustainable",
+        "Handmade",
+        "Local",
+        "Made in [Country]",
+        "Customizable",
+        "Pre-order",
+        "Back in Stock",
+        "Customer Favorites",
+        "Unique",
+        "Must-Have"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "gender": {
+      "type": "customField",
+      "options": [
+        "male",
+        "female",
+        "kids"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "regular_price": {
+      "type": "biginteger"
+    },
+    "sale_price": {
+      "type": "biginteger"
+    },
+    "tax": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "biginteger"
     }
   }
 }

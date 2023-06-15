@@ -4,7 +4,8 @@
   "info": {
     "singularName": "popular-category",
     "pluralName": "popular-categories",
-    "displayName": "Popular category"
+    "displayName": "Popular category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,21 @@
       "type": "text"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "popular_categories"
     }
   }
 }
