@@ -9,8 +9,7 @@
     "displayName": "User"
   },
   "options": {
-    "draftAndPublish": false,
-    "timestamps": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {
@@ -96,6 +95,12 @@
     },
     "address": {
       "type": "text"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "aniversery": {
+      "type": "date"
     }
   }
 }
